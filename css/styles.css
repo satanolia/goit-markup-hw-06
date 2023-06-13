@@ -567,8 +567,9 @@ img {
   border-radius: 4px;
   background-color: transparent;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  padding-left: 16px;
   color: #ffffff;
   outline: none;
 }
@@ -581,10 +582,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif ;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   height: 40px;
   color: #ffffff;
   background: var(--header-title-color);
@@ -813,7 +815,7 @@ img {
 
 .modal-field {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-title {
@@ -831,7 +833,7 @@ img {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-input {
@@ -909,7 +911,6 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
