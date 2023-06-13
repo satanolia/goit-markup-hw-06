@@ -580,15 +580,15 @@ img {
 .subscribe-btn {
   display: flex;
   align-items: center;
-  gap: 16px;
-  font-family: inherit;
+  justify-content: center;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   height: 40px;
-  padding: 0 24px 0 24px;
   color: #ffffff;
   background: var(--header-title-color);
+  min-width: 165px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -603,14 +603,15 @@ img {
 
 .subscribe-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 .subscribe-btn:hover {
-  background-color:var(--hightlight-color);
+  background-color: var(--hightlight-color);
 }
 
 .subscribe-btn:focus {
-  background-color:var(--hightlight-color);
+  background-color: var(--hightlight-color);
 }
 
 /* PORTFOLIO */
@@ -759,7 +760,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -812,6 +813,7 @@ img {
 
 .modal-field {
   position: relative;
+  margin-bottom: 16px;
 }
 
 .modal-title {
@@ -821,7 +823,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--first-background-color);
-  padding-top: 48px;
+  margin-bottom: 16px;
 }
 
 .modal-icon {
@@ -829,6 +831,7 @@ img {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input {
@@ -836,12 +839,14 @@ img {
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  padding: 0 16px 0 16px;
+  padding-left: 38px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   color: var(--second-text-color);
   outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -859,8 +864,9 @@ img {
 }
 
 .input-label {
+  display: block;
   font-size: 12px;
-  line-height: 1.7;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -868,15 +874,18 @@ img {
 
 .modal-comment {
   width: 100%;
-  height: 100px;
-  padding: 8px;
+  height: 120px;
+  padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  letter-spacing: 0.04em;
   font-size: 12px;
   line-height: 1.17;
-  color: #8e8f99;
+  color: rgba(46, 47, 66, 0.4);
   resize: none;
-  outline: none;
+  outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment:focus {
@@ -906,6 +915,17 @@ img {
   fill: transparent;
 }
 
+.check-wrap {
+  display: inline-flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-link {
+  color:var(--header-title-color);
+}
+
 .modal-check:checked + .check-text span {
   background-color: var(--hightlight-color);
   border: none;
@@ -913,11 +933,16 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-field-check {
+  margin-bottom: 24px;
+}
+
 .modal-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   min-width: 169px;
   height: 56px;
   color: #ffffff;
@@ -929,13 +954,13 @@ img {
   margin-top: 48px;
   border-radius: 4px;
   transition-property: transform;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-btn:hover {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--hightlight-color);
 }
 
 .modal-btn:focus {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--hightlight-color);
 }
