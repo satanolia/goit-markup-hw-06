@@ -575,7 +575,7 @@ img {
 }
 
 .footer-input::placeholder {
-  padding-left: 16px;
+  color: #ffffff;
 }
 
 .subscribe-btn {
@@ -885,10 +885,9 @@ img {
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  letter-spacing: 0.04em;
-  font-size: 12px;
-  line-height: 1.17;
-  color: rgba(46, 47, 66, 0.4);
+  font-size: 14px;
+  line-height: 1.4;
+  color:var(--second-text-color)
   resize: none;
   outline: transparent;
   background-color: transparent;
@@ -897,6 +896,12 @@ img {
 
 .modal-comment:focus {
   border-color: var(--header-title-color);
+}
+
+.modal-comment::placeholder {
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .check-text {
