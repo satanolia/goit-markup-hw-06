@@ -899,6 +899,13 @@ img {
   border-color: var(--header-title-color);
 }
 
+.modal-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
 .check-text {
   align-items: center;
   font-size: 12px;
